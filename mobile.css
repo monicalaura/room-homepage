@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400,500,600,700&display=swap');
+
+
+@media screen and (max-width: 1027px) {
+
+  #container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440vw;
+
+  }
+header nav {
+    
+    margin-top: 2rem;
+    position: absolute;
+    z-index: 1;
+    
+  }
+
+
+
+    section .slides {
+  /*vertical-align: bottom;*/
+        flex-wrap: wrap;
+        /* vertical-align: bottom; */
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    section .slides .image {
+        margin: 0px;
+        position: relative;
+
+
+  }
+
+    section .slides .image .img {
+        object-fit: cover;
+        width: 100vw;
+        height: 100%;
+    }
+    section .slides .title {
+        align-items: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 45px 45px 10px 45px;
+    }
+section .slides .image .prev-next {
+    position: absolute;
+    display: flex;
+   width: 10%;
+    bottom:0;
+    left: 0;
+    align-self: self-end;
+    
+    border: none;
+    border-radius: 0px;
+    z-index: 1;
+  }
+section .about__images {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+  section .about__images .furnitures__dark .dark {
+    width: 100vw;
+    height: 100%;
+  }
+
+  section .about__title {
+    padding: 50px;
+  }
+
+  section .about__images .furnitures__light .light {
+    width: 100vw;
+    height: 100%;
+  }
+  section .about__images .about__title p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    opacity: 0.5;
+  }
+  section .slides .title p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    opacity: 0.5;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+
+   header {
+    width: 100%;
+    margin-left: 0;
+   z-index:11;
+    }
+
+    
+    
+  section .slides .title {
+    align-items: start;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 45px 10px 45px;
+    }
+
+  header nav {
+    display: flex;
+    align-items: center;
+    margin-top: 0rem;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+     height: 7rem;
+  }
+
+  header nav ul {
+    display: none;
+  }
+  header nav #menu-open {
+    display: flex;
+    font-size: 35px;
+    color: #fffff2;
+    position: absolute;
+    text-align: center;
+     left: 35px;
+  }
+   header .nav-mobile{
+    opacity: 1;
+    background-color: #ffffff;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    /*z-index: 99;*/
+  }
+
+  header .nav-mobile .icon-close {
+    margin-left:20px;
+
+  }
+  header .nav-mobile ul {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    
+  }
+
+  header .nav-mobile ul li {
+    margin: 1rem 0;
+  }
+
+  header nav ul li {
+  list-style: none;
+  }
+
+  header nav ul li:after{
+  content:'';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+  }
+
+header nav ul li:hover:after{
+  width:100%; 
+  background:#252222;
+  }
+
+  header nav ul li a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    color: #1e0101;
+    transition: font-weight 0.3s ease;
+  }
+
+  header .nav-mobile ul li a:hover {
+    transition: font-weight 0.3s ease;
+    font-weight: 700;
+  }
+  header .nav-mobile .icon-close {
+      position: absolute;
+      left: 0;
+  }
+
+  section .slides .title .shop__now {
+
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  section .slides .title .shop__now:hover {
+  opacity: 0.6;
+  }
+
+  section .slides .image .prev-next {
+    position: absolute;
+    display: flex;
+    width: 10%;
+    bottom: 0;
+    left: 0;
+    align-self: self-end;
+    border: none;
+    border-radius: 0px;
+    z-index: 1;
+  }
+
+
+}
